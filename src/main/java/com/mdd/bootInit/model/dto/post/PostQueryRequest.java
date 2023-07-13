@@ -1,0 +1,67 @@
+package com.mdd.bootInit.model.dto.post;
+
+import com.mdd.bootInit.common.PageRequest;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+import java.util.List;
+
+/**
+ * 帖子分页查询请求体
+ * @author Mdd
+ * @Github <a href="https://github.com/mdd123cc"/>
+ * @Gitee <a href="https://gitee.com/mdd115192"/>
+ */
+@EqualsAndHashCode(callSuper = true)
+@Data
+public class PostQueryRequest extends PageRequest {
+
+
+    /**
+     * id
+     */
+    private Long id;
+
+    /**
+     * id
+     */
+    private Long notId;
+
+    /**
+     * 搜索词
+     */
+    private String searchText;
+
+    /**
+     * 标题
+     */
+    private String title;
+
+    /**
+     * 内容
+     */
+    private String content;
+
+    /**
+     * 标签列表
+     */
+    private List<String> tags;
+
+    /**
+     * 至少有一个标签
+     */
+    private List<String> orTags;
+
+    /**
+     * 创建用户 id
+     */
+    private Long userId;
+
+    /**
+     * 收藏用户 id
+     */
+    private Long favourUserId;
+
+    private static final long serialVersionUID = 1L;
+
+}
