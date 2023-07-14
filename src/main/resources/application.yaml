@@ -1,8 +1,7 @@
 spring:
   application:
+    # todo 自己的项目名称
     name: SpringBootProject-Init
-  freemarker:
-    check-template-location: false
   # 默认 dev 环境
   profiles:
     active: dev
@@ -51,6 +50,7 @@ spring:
     session:
       cookie:
         max-age: 2592000
+# mybaties-plus配置
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
